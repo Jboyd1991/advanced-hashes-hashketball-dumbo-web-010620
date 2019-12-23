@@ -201,9 +201,9 @@ def big_shoe_rebound
     player = ""
     game_hash.each do |place, team|
         team[:players].each do |attribute, data|
-            if largest_shoe < shoe_size(name)
-                largest_shoe = shoe_size(name)
-                player = name
+            if largest_shoe < shoe_size(attribute)
+                largest_shoe = shoe_size(attribute)
+                player = attribute
             end
         end
     end
